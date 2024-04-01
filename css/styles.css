@@ -1,21 +1,24 @@
+/* Layout mixins */
+/* Color gradients */
+/* Color variables */
 /* CSS Reset */
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
 }
 
-ul,
-ol {
+ul a,
+ol a {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-ul li,
-ol li {
+ul li, ul li > a,
+ol li,
+ol li > a {
   text-decoration: none;
   list-style: none;
 }
@@ -25,3 +28,195 @@ ol a {
   text-decoration: none;
   color: black;
 }
+
+/* Font Family */
+* {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 4.143rem;
+  font-weight: 700;
+  letter-spacing: 0.014rem;
+  line-height: 5.714rem;
+}
+
+h2 {
+  font-size: 2.857rem;
+  font-weight: 700;
+  letter-spacing: 0.014rem;
+  line-height: 4.071rem;
+}
+
+h3 {
+  font-size: 1.714rem;
+  font-weight: 700;
+  letter-spacing: 0.007rem;
+  line-height: 2.286rem;
+}
+
+h4 {
+  font-size: 1.429rem;
+  font-weight: 500;
+  letter-spacing: 0.014rem;
+  line-height: 2.143rem;
+}
+
+h5 {
+  font-size: 1.143rem;
+  font-weight: 800;
+  letter-spacing: 0.007rem;
+  line-height: 1.714rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.014rem;
+  line-height: 1.714rem;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.014rem;
+  line-height: 1.571rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.014rem;
+  line-height: 1.429rem;
+}
+
+li, li > a {
+  font-size: 1.429rem;
+  font-weight: 400;
+  letter-spacing: 0.014rem;
+  line-height: 2.143rem;
+}
+
+li > a, li > a > a {
+  font-size: 2rem;
+}
+
+nav > ul > li {
+  font-size: 2.143rem;
+  font-weight: 400;
+  letter-spacing: 0.014rem;
+  line-height: 3.214rem;
+}
+
+a {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.014rem;
+  line-height: 1.714rem;
+}
+
+.header-container {
+  border: dotted 2px red;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  background-image: url(../../assets/hero_background_mobile.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.active-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  background-color: #252b42;
+}
+
+.header {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 0;
+}
+
+.header__nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+}
+.header__nav--logo-white {
+  display: none;
+  width: 15%;
+}
+.header__nav--logo-dark {
+  width: 15%;
+}
+.header__nav--text {
+  width: 60%;
+  margin-left: -1.5rem;
+  color: #fafafa;
+  font-weight: 900;
+  font-size: 1.25rem;
+}
+.header__nav--icon {
+  cursor: pointer;
+}
+.header__nav--close {
+  width: 9%;
+  cursor: pointer;
+}
+.header__nav nav {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.header__nav nav ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.143rem;
+}
+.header__nav nav ul li, .header__nav nav ul li > a {
+  width: 100%;
+  text-align: center;
+  color: #fafafa;
+}
+.header__nav .no-show {
+  display: none;
+}
+.header__nav .show {
+  display: flex;
+}
+.header__nav .close-menu {
+  display: flex;
+  width: 9%;
+}
+
+/*# sourceMappingURL=styles.css.map */

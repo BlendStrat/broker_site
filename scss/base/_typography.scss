@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Font Family */
+* {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 4.143rem;
+  font-weight: 700;
+  letter-spacing: 0.014rem;
+  line-height: 5.714rem;
+}
+
+h2 {
+  font-size: 2.857rem;
+  font-weight: 700;
+  letter-spacing: 0.014rem;
+  line-height: 4.071rem;
+}
+
+h3 {
+  font-size: 1.714rem;
+  font-weight: 700;
+  letter-spacing: 0.007rem;
+  line-height: 2.286rem;
+}
+
+h4 {
+  font-size: 1.429rem;
+  font-weight: 500;
+  letter-spacing: 0.014rem;
+  line-height: 2.143rem;
+}
+
+h5 {
+  font-size: 1.143rem;
+  font-weight: 800;
+  letter-spacing: 0.007rem;
+  line-height: 1.714rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.014rem;
+  line-height: 1.714rem;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.014rem;
+  line-height: 1.571rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.014rem;
+  line-height: 1.429rem;
+}
+
+li {
+  font-size: 1.429rem;
+  font-weight: 400;
+  letter-spacing: 0.014rem;
+  line-height: 2.143rem;
+}
+
+li > a {
+  @extend li;
+
+  font-size: 2rem;
+}
+
+nav > ul > li {
+  font-size: 2.143rem;
+  font-weight: 400;
+  letter-spacing: 0.014rem;
+  line-height: 3.214rem;
+}
+
+a {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.014rem;
+  line-height: 1.714rem;
+}

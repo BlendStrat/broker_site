@@ -1,0 +1,26 @@
+.header-container {
+  border: dotted 2px red;
+  width: 100%;
+
+  @include flexbox(column, nowrap, space-around, center, 0);
+
+  background-image: url(../../assets/hero_background_mobile.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.active-menu {
+  width: 100%;
+
+  @include flexbox(column, nowrap, space-around, center, 0);
+
+  background-color: $dark-background-color;
+}
+
+.header {
+  width: 100%;
+  height: fit-content;
+
+  @include flexbox (column, nowrap, start, center, 0);
+}
