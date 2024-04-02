@@ -1,19 +1,20 @@
 .hero-cta {
-    border: solid transparent 1px;
-    border-radius: 2.643rem;
-    width: 45%;
-    padding: 0.80rem;
-    cursor: pointer;
-    background-color: $blue-primary-color;
-    text-align: center;
-    color: $white-primary-color;
+  border: solid transparent 1px;
+  border-radius: 2.643rem;
+  width: 45%;
+  padding: 0.8rem;
+  cursor: pointer;
+  background-color: $blue-primary-color;
+  text-align: center;
+  color: $white-primary-color;
 }
 
 .hero-info {
-    @extend .hero-cta;
-    border:solid 1px $white-primary-color;
-    width: 35%;
-    background-color: transparent;
-    margin-top: 0.75rem;
-    margin-bottom: 1rem;
+  @extend .hero-cta;
+
+  border: solid 1px $white-primary-color;
+  width: 35%;
+  background-color: transparent;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
 }

@@ -1,0 +1,32 @@
+.card-blue {
+  border: solid transparent 1px;
+  border-radius: 0.5rem;
+  width: 80%;
+  padding: 1.5rem;
+  background-color: $blue-primary-color;
+
+  figure {
+    width: 100%;
+
+    @include flexbox (column, nowrap, center, center, 1rem);
+
+    img {
+      width: 25%;
+      color: $white-primary-color;
+    }
+
+    h5 {
+      color: $white-primary-color;
+    }
+  }
+}
+
+.card-white {
+  @extend .card-blue;
+
+  background-color: $white-primary-color;
+
+  figure h5 {
+    color: $dark-background-color;
+  }
+}

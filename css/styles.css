@@ -14,6 +14,8 @@ ol a {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  color: black;
 }
 
 ul li, ul li > a,
@@ -21,12 +23,6 @@ ol li,
 ol li > a {
   text-decoration: none;
   list-style: none;
-}
-
-ul a,
-ol a {
-  text-decoration: none;
-  color: black;
 }
 
 /* Font Family */
@@ -98,6 +94,13 @@ li, li > a {
   line-height: 2.143rem;
 }
 
+a {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.014rem;
+  line-height: 1.714rem;
+}
+
 li > a, li > a > a {
   font-size: 2rem;
 }
@@ -107,13 +110,6 @@ nav > ul > li {
   font-weight: 400;
   letter-spacing: 0.014rem;
   line-height: 3.214rem;
-}
-
-a {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.014rem;
-  line-height: 1.714rem;
 }
 
 .hero-cta, .hero-info {
@@ -133,6 +129,45 @@ a {
   background-color: transparent;
   margin-top: 0.75rem;
   margin-bottom: 1rem;
+}
+
+.card-blue, .card-white {
+  border: solid transparent 1px;
+  border-radius: 0.5rem;
+  width: 80%;
+  padding: 1.5rem;
+  background-color: #23a6f0;
+}
+.card-blue figure, .card-white figure {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.card-blue figure img, .card-white figure img {
+  width: 25%;
+  color: #fafafa;
+}
+.card-blue figure h5, .card-white figure h5 {
+  color: #fafafa;
+}
+
+.card-white {
+  background-color: #fafafa;
+}
+.card-white figure h5 {
+  color: #252b42;
+}
+
+footer {
+  border: solid transparent 1px;
+}
+
+form {
+  border: dotted red 1px;
 }
 
 .header-container {
@@ -162,7 +197,7 @@ a {
 
 .header {
   width: 100%;
-  height: fit-content;
+  height: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -271,6 +306,41 @@ a {
 .header__nav .close-menu {
   display: flex;
   width: 9%;
+}
+
+.portfolio, .portfolio__head {
+  width: 100%;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #252b42;
+}
+.portfolio__head {
+  margin-top: 3rem;
+  padding: 1rem;
+}
+.portfolio__head h2 {
+  width: 90%;
+  text-align: center;
+  color: #fafafa;
+}
+.portfolio__head p {
+  width: 50%;
+  text-align: center;
+  color: #fafafa;
+}
+.portfolio__card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
