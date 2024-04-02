@@ -1,0 +1,33 @@
+.clients {
+  width: 100%;
+  padding: 5rem 0 1rem 0;
+  background-color: $clear-blue-color;
+
+  @include flexbox (column, nowrap, center, center, 2rem);
+
+  &__head {
+    width: 100%;
+
+    @include flexbox (column, nowrap, center, center, 2rem);
+
+    h2 {
+      width: 80%;
+      color: $white-primary-color;
+      text-align: center;
+    }
+
+    p {
+      width: 80%;
+      color: $white-primary-color;
+      text-align: center;
+    }
+  }
+
+  &__card-container {
+    width: 100%;
+
+    @include flexbox (column, nowrap, center, center, 2rem);
+
+    padding: 1rem 0 1rem 0;
+  }
+}

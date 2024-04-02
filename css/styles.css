@@ -162,6 +162,43 @@ nav > ul > li {
   color: #252b42;
 }
 
+.client-card {
+  width: 80%;
+  padding: 1rem;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+.client-card h3 {
+  width: 100%;
+  text-align: left;
+  color: #252b42;
+}
+.client-card h6 {
+  width: 100%;
+  text-align: left;
+  color: #737373;
+}
+.client-card__rate {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 0.3rem;
+}
+.client-card p {
+  width: 100%;
+  padding: 0 8rem 0 0;
+  text-align: left;
+  color: #737373;
+}
+
 footer {
   border: solid transparent 1px;
 }
@@ -341,6 +378,47 @@ form {
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
+}
+
+.clients {
+  width: 100%;
+  padding: 5rem 0 1rem 0;
+  background-color: #8ec2f2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.clients__head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.clients__head h2 {
+  width: 80%;
+  color: #fafafa;
+  text-align: center;
+}
+.clients__head p {
+  width: 80%;
+  color: #fafafa;
+  text-align: center;
+}
+.clients__card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0 1rem 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
