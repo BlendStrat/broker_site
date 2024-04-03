@@ -1,0 +1,76 @@
+.contact {
+  width: 100%;
+  padding: 4rem 0 1rem 0;
+  background-color: $white-primary-color;
+
+  @include flexbox (column, nowrap, center, center, 1rem);
+
+  &__head {
+    width: 80%;
+
+    @include flexbox (column, nowrap, start, start, 1rem);
+
+    h5 {
+      width: 100%;
+      text-align: left;
+      color: $text-color;
+    }
+
+    h2 {
+      width: 95%;
+      margin-left: 1rem;
+      text-align: left;
+      color: $text-color;
+    }
+  }
+
+  form {
+    width: 90%;
+    padding: 1rem 0 1rem 0;
+    background-color: $white-primary-color;
+
+    @include flexbox (column, nowrap, start, center, 1rem);
+
+    fieldset {
+      border: transparent;
+      width: 90%;
+
+      @include flexbox (column, nowrap, center, start, 1rem);
+
+      ul {
+        width: 100%;
+
+        @include flexbox (column, nowrap, center, start, 1rem);
+
+        li {
+          width: 100%;
+          padding: 0.5rem;
+
+          @include flexbox (column, nowrap, center, start, 0);
+
+          label {
+            width: 25%;
+            color: $text-color;
+          }
+
+          input {
+            border: solid $muted-color 2px;
+            border-radius: 0.25rem;
+            width: 100%;
+            padding: 1rem;
+            height: 3.5rem;
+            margin-top: 0.5rem;
+          }
+
+          textarea {
+            border: solid $second-text-color 1px;
+            border-radius: 0.25rem;
+            width: 100%;
+            padding: 1rem;
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

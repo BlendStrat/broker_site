@@ -88,3 +88,23 @@ nav > ul > li {
   letter-spacing: 0.014rem;
   line-height: 3.214rem;
 }
+
+label {
+  @extend p;
+}
+
+input::placeholder {
+  @extend h6;
+
+  font-weight: 400;
+  font-style: italic;
+  color: $second-text-color;
+}
+
+textarea::placeholder {
+  @extend h6;
+
+  font-weight: 400;
+  font-style: italic;
+  color: $second-text-color;
+}

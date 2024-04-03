@@ -1,3 +1,5 @@
+// Hero buttons
+
 .hero-cta {
   border: solid transparent 1px;
   border-radius: 2.643rem;
@@ -17,4 +19,16 @@
   background-color: transparent;
   margin-top: 0.75rem;
   margin-bottom: 1rem;
+}
+
+// Submit button
+.submit-btn {
+  border: solid transparent 1px;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.6rem;
+  background-color: $blue-primary-color;
+  color: $white-primary-color;
+  font-size: 1.15rem;
 }
