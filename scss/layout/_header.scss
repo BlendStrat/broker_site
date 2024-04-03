@@ -1,5 +1,4 @@
 .header-container {
-  border: dotted 2px red;
   width: 100%;
 
   @include flexbox(column, nowrap, space-around, center, 0);
@@ -20,7 +19,7 @@
 
 .header {
   width: 100%;
-  height: fit-content;
+  height: auto;
 
   @include flexbox (column, nowrap, start, center, 0);
 }

@@ -1,0 +1,35 @@
+.hero {
+  width: 100%;
+
+  @include flexbox (column, nowrap, space-around, center, 1rem);
+
+  &__head {
+    @extend .hero;
+
+    h1 {
+      width: 90%;
+      margin-top: 6rem;
+      color: $white-primary-color;
+      text-align: center;
+    }
+
+    h4 {
+      width: 65%;
+      margin-top: 2.5rem;
+      text-align: center;
+      color: $white-primary-color;
+    }
+  }
+
+  &__background {
+    width: 90%;
+
+    @include flexbox (column, nowrap, center, center, 0);
+
+    img {
+      width: 100%;
+      height: 100%;
+      image-rendering: optimizeSpeed;
+    }
+  }
+}

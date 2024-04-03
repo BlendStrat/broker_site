@@ -18,8 +18,10 @@
     <div id="container" class="header-container">
         <header id="header" class="header">
             <div class="header__nav">
-                <img id="white-logo" class="header__nav--logo-white" src="./assets/BlendStrat-removebg-preview.png" alt="logo">
-                <img id="dark-logo" class="header__nav--logo-dark" src="./assets/BlendStrat-removebg-preview_black.png" alt="logo">
+                <img id="white-logo" class="header__nav--logo-white" src="./assets/BlendStrat-removebg-preview.png"
+                    alt="logo">
+                <img id="dark-logo" class="header__nav--logo-dark" src="./assets/BlendStrat-removebg-preview_black.png"
+                    alt="logo">
                 <p class="header__nav--text">BlendStrat Brokers</p>
                 <img id="menu-icon" class="header__nav--icon" src="./assets/icon_menu.svg" alt="icon menu">
                 <img id="close-icon" src="./assets/close-icon.svg" alt="close menu" class="header__nav--close no-show">
@@ -34,9 +36,166 @@
             </div>
         </header>
         <!--Hero-->
-        <section class="hero"></section>
-
+        <section class="hero">
+            <div class="hero__head">
+                <h1>
+                    Financial Assistance With True Purpose
+                </h1>
+                <h4>
+                    We know how large objects will act, but things on a small scale.
+                </h4>
+                <button id="hero-submit" type="submit" class="hero-cta">Get Quote Now</button>
+                <button id="hero-info" class="hero-info" type="button">Learn More</button>
+            </div>
+            <div class="hero__background">
+                <img src="./assets/hero_cover_mobile.svg" alt="">
+            </div>
+        </section>
     </div>
+    <main>
+        <!--Portfolio-->
+        <section class="portfolio">
+            <div class="portfolio__head">
+                <h2>
+                    Better Strategy With Quality Business
+                </h2>
+                <p>
+                    Problems trying to resolve
+                    the conflict between the
+                    two major realms of Classical
+                    physics: Newtonian mechanics
+                </p>
+            </div>
+            <div class="portfolio__card-container">
+                <div class="card-white">
+                    <figure>
+                        <img src="./assets/icon_people.svg" alt="two people icon">
+                        <figcaption>
+                            <h5>Retiro</h5>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="card-blue">
+                    <figure>
+                        <img src="./assets/icon_people_white.svg" alt="two people icon">
+                        <figcaption>
+                            <h5>Gastos Médicos</h5>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="card-white">
+                    <figure>
+                        <img src="./assets/icon_people.svg" alt="two people icon">
+                        <figcaption>
+                            <h5>Crédito</h5>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!--Clients-->
+        <section class="clients">
+            <div class="clients__head">
+                <h2>
+                    Lo que opinan nuestros Clientes
+                </h2>
+                <p>
+                    Problems trying to resolve the conflict between the two major realms of Classical physics:
+                    Newtonian mechanics
+                </p>
+            </div>
+            <div class="clients__card-container">
+                <div class="client-card">
+                    <h3>
+                        Saira V.
+                    </h3>
+                    <h6>
+                        Terapeuta Independiente
+                    </h6>
+                    <div class="client-card__rate">
+                        <img src="./assets/icon-rate-ok.svg" alt="good rating">
+                        <img src="./assets/icon-rate-ok.svg" alt="good rating">
+                        <img src="./assets/icon-rate-ok.svg" alt="good rating">
+                        <img src="./assets/icon-rate-ok.svg" alt="good rating">
+                        <img src="./assets/icon-rate.svg" alt="no rating">
+                    </div>
+                    <p>
+                        This proved to be impossible using the
+                        traditional concepts of space and time. Einstein
+                        developed a new view of time first and then
+                        space. This proved to be impossible using the
+                        traditional concepts of space and time. Einstein
+                        developed a new view of time first and then space.
+                    </p>
+                </div>
+                <div class="client-card">
+                    <h3>
+                        Jesús A.
+                    </h3>
+                    <h6>
+                        Ingeniero Industrial
+                    </h6>
+                    <div class="client-card__rate">
+                        <img src="./assets/icon-rate-ok.svg" alt="good rating">
+                        <img src="./assets/icon-rate-ok.svg" alt="good rating">
+                        <img src="./assets/icon-rate-ok.svg" alt="good rating">
+                        <img src="./assets/icon-rate-ok.svg" alt="good rating">
+                        <img src="./assets/icon-rate.svg" alt="no rating">
+                    </div>
+                    <p>
+                        This proved to be impossible using the
+                        traditional concepts of space and time. Einstein
+                        developed a new view of time first and then
+                        space. This proved to be impossible using the
+                        traditional concepts of space and time. Einstein
+                        developed a new view of time first and then space.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--Contact-->
+        <section class="contact">
+            <div class="contact__head">
+                <h5>
+                    Contáctanos
+                </h5>
+                <h2>
+                    Agenda una cita
+                </h2>
+            </div>
+
+            <form id="contact-form" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/mzbnjwwa"
+                method="post">
+                <fieldset id="contact-form-inputs">
+                    <ul>
+                        <li>
+                            <label for="full-name">Nombre*:</label>
+                            <input type="text" name="name" id="full-name" placeholder="Nombre y Apellido" required="">
+                        </li>
+                        <li>
+                            <label for="email-address">Email*:</label>
+                            <input type="email" name="_replyto" id="email-address" placeholder="usuario@correo.com"
+                                required="">
+                        </li>
+                        <li>
+                            <label for="telephone">Teléfono*:</label>
+                            <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555"
+                                required="">
+                        </li>
+                        <li>
+                            <label for="message">Mensaje:</label>
+                            <textarea rows="6" name="message" id="message" placeholder="Ingrese su mensaje"
+                                required=""></textarea>
+                        </li>
+                        <li>
+                            <button class="submit-btn" type="submit">Enviar</button>
+                        </li>
+                    </ul>
+                </fieldset>
+
+            </form>
+        </section>
+    </main>
 
 
 

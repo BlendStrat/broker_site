@@ -14,6 +14,8 @@ ol a {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  color: black;
 }
 
 ul li, ul li > a,
@@ -21,12 +23,6 @@ ol li,
 ol li > a {
   text-decoration: none;
   list-style: none;
-}
-
-ul a,
-ol a {
-  text-decoration: none;
-  color: black;
 }
 
 /* Font Family */
@@ -70,7 +66,7 @@ h5 {
   line-height: 1.714rem;
 }
 
-h6 {
+h6, textarea::placeholder, input::placeholder {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.014rem;
@@ -84,7 +80,7 @@ button {
   line-height: 1.571rem;
 }
 
-p {
+p, label {
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.014rem;
@@ -98,6 +94,13 @@ li, li > a {
   line-height: 2.143rem;
 }
 
+a {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.014rem;
+  line-height: 1.714rem;
+}
+
 li > a, li > a > a {
   font-size: 2rem;
 }
@@ -109,15 +112,212 @@ nav > ul > li {
   line-height: 3.214rem;
 }
 
-a {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.014rem;
-  line-height: 1.714rem;
+input::placeholder {
+  font-weight: 400;
+  font-style: italic;
+  color: #737373;
+}
+
+textarea::placeholder {
+  font-weight: 400;
+  font-style: italic;
+  color: #737373;
+}
+
+.hero-cta, .hero-info {
+  border: solid transparent 1px;
+  border-radius: 2.643rem;
+  width: 45%;
+  padding: 0.8rem;
+  cursor: pointer;
+  background-color: #23a6f0;
+  text-align: center;
+  color: #fafafa;
+}
+
+.hero-info {
+  border: solid 1px #fafafa;
+  width: 35%;
+  background-color: transparent;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.submit-btn {
+  border: solid transparent 1px;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.6rem;
+  background-color: #23a6f0;
+  color: #fafafa;
+  font-size: 1.15rem;
+}
+
+.card-blue, .card-white {
+  border: solid transparent 1px;
+  border-radius: 0.5rem;
+  width: 80%;
+  padding: 1.5rem;
+  background-color: #23a6f0;
+}
+.card-blue figure, .card-white figure {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.card-blue figure img, .card-white figure img {
+  width: 25%;
+  color: #fafafa;
+}
+.card-blue figure h5, .card-white figure h5 {
+  color: #fafafa;
+}
+
+.card-white {
+  background-color: #fafafa;
+}
+.card-white figure h5 {
+  color: #252b42;
+}
+
+.client-card {
+  width: 80%;
+  padding: 1rem;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+.client-card h3 {
+  width: 100%;
+  text-align: left;
+  color: #252b42;
+}
+.client-card h6, .client-card input::placeholder, .client-card textarea::placeholder {
+  width: 100%;
+  text-align: left;
+  color: #737373;
+}
+.client-card__rate {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 0.3rem;
+}
+.client-card p, .client-card label {
+  width: 100%;
+  padding: 0 8rem 0 0;
+  text-align: left;
+  color: #737373;
+}
+
+footer {
+  border: solid transparent 1px;
+}
+
+.contact {
+  width: 100%;
+  padding: 4rem 0 1rem 0;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.contact__head {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+}
+.contact__head h5 {
+  width: 100%;
+  text-align: left;
+  color: #252b42;
+}
+.contact__head h2 {
+  width: 95%;
+  margin-left: 1rem;
+  text-align: left;
+  color: #252b42;
+}
+.contact form {
+  width: 90%;
+  padding: 1rem 0 1rem 0;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.contact form fieldset {
+  border: transparent;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+.contact form fieldset ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+.contact form fieldset ul li, .contact form fieldset ul li > a {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: start;
+  gap: 0;
+}
+.contact form fieldset ul li label {
+  width: 25%;
+  color: #252b42;
+}
+.contact form fieldset ul li input {
+  border: solid #bdbdbd 2px;
+  border-radius: 0.25rem;
+  width: 100%;
+  padding: 1rem;
+  height: 3.5rem;
+  margin-top: 0.5rem;
+}
+.contact form fieldset ul li textarea {
+  border: solid #737373 1px;
+  border-radius: 0.25rem;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 0.5rem;
 }
 
 .header-container {
-  border: dotted 2px red;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -144,13 +344,49 @@ a {
 
 .header {
   width: 100%;
-  height: fit-content;
+  height: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: start;
   align-items: center;
   gap: 0;
+}
+
+.hero, .hero__head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+.hero__head h1 {
+  width: 90%;
+  margin-top: 6rem;
+  color: #fafafa;
+  text-align: center;
+}
+.hero__head h4 {
+  width: 65%;
+  margin-top: 2.5rem;
+  text-align: center;
+  color: #fafafa;
+}
+.hero__background {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.hero__background img {
+  width: 100%;
+  height: 100%;
+  image-rendering: optimizeSpeed;
 }
 
 .header__nav {
@@ -217,6 +453,82 @@ a {
 .header__nav .close-menu {
   display: flex;
   width: 9%;
+}
+
+.portfolio, .portfolio__head {
+  width: 100%;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #252b42;
+}
+.portfolio__head {
+  margin-top: 3rem;
+  padding: 1rem;
+}
+.portfolio__head h2 {
+  width: 90%;
+  text-align: center;
+  color: #fafafa;
+}
+.portfolio__head p, .portfolio__head label {
+  width: 50%;
+  text-align: center;
+  color: #fafafa;
+}
+.portfolio__card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.clients {
+  width: 100%;
+  padding: 5rem 0 1rem 0;
+  background-color: #8ec2f2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.clients__head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.clients__head h2 {
+  width: 80%;
+  color: #fafafa;
+  text-align: center;
+}
+.clients__head p, .clients__head label {
+  width: 80%;
+  color: #fafafa;
+  text-align: center;
+}
+.clients__card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0 1rem 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

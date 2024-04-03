@@ -69,6 +69,13 @@ li {
   line-height: 2.143rem;
 }
 
+a {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.014rem;
+  line-height: 1.714rem;
+}
+
 li > a {
   @extend li;
 
@@ -82,9 +89,22 @@ nav > ul > li {
   line-height: 3.214rem;
 }
 
-a {
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.014rem;
-  line-height: 1.714rem;
+label {
+  @extend p;
+}
+
+input::placeholder {
+  @extend h6;
+
+  font-weight: 400;
+  font-style: italic;
+  color: $second-text-color;
+}
+
+textarea::placeholder {
+  @extend h6;
+
+  font-weight: 400;
+  font-style: italic;
+  color: $second-text-color;
 }

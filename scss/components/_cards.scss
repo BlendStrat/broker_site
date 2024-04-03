@@ -1,0 +1,67 @@
+// Portfolio cards
+.card-blue {
+  border: solid transparent 1px;
+  border-radius: 0.5rem;
+  width: 80%;
+  padding: 1.5rem;
+  background-color: $blue-primary-color;
+
+  figure {
+    width: 100%;
+
+    @include flexbox (column, nowrap, center, center, 1rem);
+
+    img {
+      width: 25%;
+      color: $white-primary-color;
+    }
+
+    h5 {
+      color: $white-primary-color;
+    }
+  }
+}
+
+.card-white {
+  @extend .card-blue;
+
+  background-color: $white-primary-color;
+
+  figure h5 {
+    color: $dark-background-color;
+  }
+}
+
+// Clients card
+.client-card {
+  width: 80%;
+  padding: 1rem;
+  background-color: $white-primary-color;
+
+  @include flexbox (column, nowrap, center, start, 1rem);
+
+  h3 {
+    width: 100%;
+    text-align: left;
+    color: $text-color;
+  }
+
+  h6 {
+    width: 100%;
+    text-align: left;
+    color: $second-text-color;
+  }
+
+  &__rate {
+    width: 100%;
+
+    @include flexbox (row, nowrap, start, center, 0.3rem);
+  }
+
+  p {
+    width: 100%;
+    padding: 0 8rem 0 0;
+    text-align: left;
+    color: $second-text-color;
+  }
+}

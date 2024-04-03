@@ -1,0 +1,33 @@
+.portfolio {
+  width: 100%;
+  padding: 1.75rem;
+
+  @include flexbox (column, nowrap, center, center, 2rem);
+
+  background-color: $dark-background-color;
+
+  &__head {
+    @extend .portfolio;
+
+    margin-top: 3rem;
+    padding: 1rem;
+
+    h2 {
+      width: 90%;
+      text-align: center;
+      color: $white-primary-color;
+    }
+
+    p {
+      width: 50%;
+      text-align: center;
+      color: $white-primary-color;
+    }
+  }
+
+  &__card-container {
+    width: 100%;
+
+    @include flexbox (column, nowrap, space-around, center, 2rem);
+  }
+}
