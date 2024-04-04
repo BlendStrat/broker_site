@@ -1,3 +1,93 @@
 footer {
-  border: solid transparent 1px;
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+
+  @include flexbox (column, nowrap, center, center, 1rem);
+
+  background-color: $dark-background-color;
+}
+
+.footer__copy {
+  width: 90%;
+  padding: 0.5rem;
+
+  @include flexbox (column, nowrap, center, center, 0.5rem);
+
+  h6 {
+    text-align: center;
+    color: $white-primary-color;
+  }
+
+  p {
+    text-align: center;
+    color: $white-primary-color;
+    font-size: 0.75rem;
+
+    a {
+      text-decoration: none;
+      font-size: 0.75rem;
+    }
+  }
+}
+
+.footer__contact {
+  width: 90%;
+  padding: 1rem;
+
+  @include flexbox (column, nowrap, center, start, 1rem);
+
+  h5 {
+    width: 100%;
+    margin-top: 1.5rem;
+    text-align: left;
+    color: $white-primary-color;
+  }
+
+  ul {
+    width: 100%;
+    margin-top: 0.75rem;
+
+    @include flexbox (column, nowrap, center, start, 1rem);
+
+    li {
+      width: 100%;
+
+      @include flexbox (row, nowrap, start, center, 1rem);
+
+      h6 {
+        text-align: left;
+        color: $white-primary-color;
+      }
+
+      a {
+        color: $white-primary-color;
+      }
+    }
+  }
+}
+
+.footer__socials {
+  width: 90%;
+  padding: 1rem;
+
+  @include flexbox (column, nowrap, center, start, 1rem);
+
+  ul {
+    width: 100%;
+    padding: 1rem;
+
+    @include flexbox (row, nowrap, start, center, 1rem);
+
+    li {
+      width: auto;
+
+      a {
+        @include flexbox (row, nowrap, start, center, 0);
+
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
 }

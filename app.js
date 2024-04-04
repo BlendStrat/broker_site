@@ -3,26 +3,29 @@ const menuIcon = document.querySelector('#menu-icon');
 const menuContainer = document.querySelector('#container');
 const navBar = document.querySelector('#nav');
 const closeIcon = document.querySelector('#close-icon');
-const whiteLogo = document.querySelector('#white-logo');
-const darkLogo = document.querySelector('#dark-logo');
+const aboutLink = document.querySelector('#about-link');
+const portfolioLink = document.querySelector('#portfolio-link');
+const clientsLink = document.querySelector('#clients-link');
+const contactLink = document.querySelector('#contact-link');
 
 /* Mobile menu */
 
-// Show navbar
-menuIcon.addEventListener('click', () => {
+// Nav elements Array
+const linkArr = [aboutLink, portfolioLink, clientsLink, contactLink];
+
+// Show navbar function
+function showNav() {
   menuIcon.classList.toggle('no-show');
   closeIcon.removeAttribute('class', 'no-show');
   closeIcon.classList.toggle('close-menu');
   navBar.removeAttribute('class', 'no-show');
   navBar.classList.toggle('show');
-  darkLogo.classList.toggle('no-show');
-  whiteLogo.classList.toggle('show');
   menuContainer.removeAttribute('class');
   menuContainer.classList.toggle('active-menu');
-});
+}
 
-// Hide navbar
-closeIcon.addEventListener('click', () => {
+// Hide navbar function
+function hideNav() {
   menuIcon.removeAttribute('class', 'no-show');
   menuIcon.classList.toggle('header__nav--icon');
   closeIcon.removeAttribute('class', 'show');
@@ -30,10 +33,23 @@ closeIcon.addEventListener('click', () => {
   closeIcon.classList.toggle('no-show');
   navBar.removeAttribute('class', 'show');
   navBar.classList.toggle('no-show');
-  whiteLogo.removeAttribute('class', 'show');
-  whiteLogo.classList.toggle('header__nav--logo-white');
-  darkLogo.removeAttribute('class', 'show');
-  darkLogo.classList.toggle('header__nav--logo-dark');
   menuContainer.removeAttribute('class', 'active-menu');
   menuContainer.classList.toggle('header-container');
+}
+
+// Event Listeners
+
+// Sow navbar
+menuIcon.addEventListener('click', () => {
+  showNav();
+});
+// Hide navbar
+closeIcon.addEventListener('click', () => {
+  hideNav();
+});
+
+linkArr.forEach((e) => {
+  e.addEventListener('click', () => {
+    hideNav();
+  });
 });
