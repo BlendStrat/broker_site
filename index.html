@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
     <title>BlendStrat - Inicio</title>
     <link rel="shortcut icon" href="/assets/BlendStrat.png" type="image/x-icon">
@@ -20,23 +22,21 @@
             <div class="header__nav">
                 <img id="white-logo" class="header__nav--logo-white" src="./assets/BlendStrat-removebg-preview.png"
                     alt="logo">
-                <img id="dark-logo" class="header__nav--logo-dark" src="./assets/BlendStrat-removebg-preview_black.png"
-                    alt="logo">
                 <p class="header__nav--text">BlendStrat Brokers</p>
                 <img id="menu-icon" class="header__nav--icon" src="./assets/icon_menu.svg" alt="icon menu">
                 <img id="close-icon" src="./assets/close-icon.svg" alt="close menu" class="header__nav--close no-show">
                 <nav id="nav" class="no-show">
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Portafolio</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a id="about-link" href="#hero">Nosotros</a></li>
+                        <li><a id="portfolio-link" href="#portfolio">Portafolio</a></li>
+                        <li><a id="clients-link" href="#clients">Casos de Éxito</a></li>
+                        <li><a id="contact-link" href="#contact">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <!--Hero-->
-        <section class="hero">
+        <section id="hero" class="hero">
             <div class="hero__head">
                 <h1>
                     Financial Assistance With True Purpose
@@ -54,7 +54,7 @@
     </div>
     <main>
         <!--Portfolio-->
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
             <div class="portfolio__head">
                 <h2>
                     Better Strategy With Quality Business
@@ -94,7 +94,7 @@
             </div>
         </section>
         <!--Clients-->
-        <section class="clients">
+        <section id="clients" class="clients">
             <div class="clients__head">
                 <h2>
                     Lo que opinan nuestros Clientes
@@ -154,13 +154,13 @@
             </div>
         </section>
         <!--Contact-->
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="contact__head">
                 <h5>
-                    Contáctanos
+                    ¿Necesitas más información?
                 </h5>
                 <h2>
-                    Agenda una cita
+                    Déjanos un mensaje
                 </h2>
             </div>
 
@@ -196,10 +196,47 @@
             </form>
         </section>
     </main>
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.0.0/dist/iconify-icon.min.js"></script>
+    <!--Footer-->
+    <footer>
+        <div class="footer__contact">
+            <h5>Contáctanos</h5>
+            <ul>
+                <li>
+                    <img src="./assets/icon_phone.svg" alt="telefono">
+                    <h6>(223) 152 9293</h6>
+                </li>
+                <li>
+                    <img src="./assets/icon_mail.svg" alt="telefono">
+                    <h6><a href="mailto:contacto@blendstrat.com.mx">contacto@blendstrat.com.mx</a></h6>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__socials">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com">
+                        <img src="./assets/facebook.svg" alt="logo de facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com">
+                        <img src="./assets/instagram.svg" alt="logo de instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com">
+                        <img src="./assets/twitter.svg" alt="logo de twitter"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__copy">
+            <h6>
+                Algunos Derechos Reservados
+            </h6>
+            <p>
+                Made With Love By <a id="profile-link" href="https://github.com/cuauh-cabrera" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-github"></i> Cuau Cabrera</a>
+            </p>
+        </div>
+    </footer>
     <script src="./app.js"></script>
 </body>
 

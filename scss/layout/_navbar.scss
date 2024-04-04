@@ -1,14 +1,11 @@
 .header__nav {
   width: 100%;
+  position: fixed;
+  background-color: $dark-background-color;
 
   @include flexbox (row, wrap, space-around, center, 0);
 
   &--logo-white {
-    display: none;
-    width: 15%;
-  }
-
-  &--logo-dark {
     width: 15%;
   }
 
