@@ -1,5 +1,6 @@
 .hero {
   width: 100%;
+  margin-top: 2rem;
 
   @include flexbox (column, nowrap, space-around, center, 1rem);
 
@@ -31,5 +32,13 @@
       height: 100%;
       image-rendering: optimizeSpeed;
     }
+  }
+
+  @include mobile-sm {
+    margin-top: 3rem;
+  }
+
+  @include mobile-lg {
+    margin-top: 3rem;
   }
 }

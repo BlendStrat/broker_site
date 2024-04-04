@@ -57,5 +57,13 @@
   .close-menu {
     display: flex;
     width: 9%;
+
+    @include mobile-sm {
+      width: 7%;
+    }
+
+    @include mobile-lg {
+      width: 7%;
+    }
   }
 }
