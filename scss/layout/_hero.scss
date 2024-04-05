@@ -5,13 +5,30 @@
   @include flexbox (column, nowrap, space-around, center, 1rem);
 
   &__head {
-    @extend .hero;
+    width: 100%;
+    margin-top: 2rem;
+
+    @include flexbox (column, nowrap, space-around, center, 1rem);
 
     h1 {
       width: 90%;
       margin-top: 6rem;
       color: $white-primary-color;
       text-align: center;
+
+      @include desktop-sm {
+        width: 90%;
+        text-align: left;
+      }
+
+      @include desktop-md {
+        width: 100%;
+        text-align: left;
+      }
+
+      @include desktop-xxl {
+        font-size: 6rem;
+      }
     }
 
     h4 {
@@ -19,6 +36,47 @@
       margin-top: 2.5rem;
       text-align: center;
       color: $white-primary-color;
+
+      @include desktop-sm {
+        width: 90%;
+        text-align: left;
+      }
+
+      @include desktop-md {
+        width: 100%;
+        text-align: left;
+      }
+
+      @include desktop-xxl {
+        font-size: 2rem;
+      }
+    }
+
+    @include desktop-sm {
+      width: 50%;
+      margin-top: 0;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+
+      @include flexbox (column, nowrap, start, start, 1rem);
+    }
+
+    @include desktop-xxl {
+      width: 50%;
+      height: 70vh;
+    }
+  }
+
+  &__btn {
+    width: 90%;
+    padding: 1rem;
+
+    @include flexbox (column, nowrap, center, center, 1rem);
+
+    @include desktop-sm {
+      padding: 0;
+
+      @include flexbox (row, nowrap, start, center, 1rem);
     }
   }
 
@@ -31,6 +89,19 @@
       width: 100%;
       height: 100%;
       image-rendering: optimizeSpeed;
+
+      @include desktop-sm {
+        height: 90vh;
+        margin-bottom: 0;
+      }
+    }
+
+    @include desktop-sm {
+      width: 50%;
+      height: auto;
+      margin-bottom: 0;
+
+      @include flexbox (column, nowrap, center, end, 0);
     }
   }
 
@@ -40,5 +111,17 @@
 
   @include mobile-lg {
     margin-top: 3rem;
+  }
+
+  @include desktop-sm {
+    @include flexbox (row, nowrap, space-around, end, 0);
+  }
+
+  @include desktop-md {
+    padding: 0 2rem 0 2rem;
+  }
+
+  @include desktop-xxl {
+    padding: 0 5rem 0 5rem;
   }
 }

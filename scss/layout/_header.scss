@@ -7,6 +7,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include desktop-sm {
+    width: 100%;
+    background-image: url(../../assets/hero_background_desk.svg);
+  }
 }
 
 .active-menu {

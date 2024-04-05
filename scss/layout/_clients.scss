@@ -20,6 +20,14 @@
       width: 80%;
       color: $white-primary-color;
       text-align: center;
+
+      @include desktop-md {
+        width: 50%;
+      }
+
+      @include desktop-xxl {
+        font-size: 1.25rem;
+      }
     }
   }
 
@@ -29,5 +37,29 @@
     @include flexbox (column, nowrap, center, center, 2rem);
 
     padding: 1rem 0 1rem 0;
+
+    @include desktop-sm {
+      width: 90%;
+
+      @include flexbox (row, nowrap, space-around, center, 1rem);
+    }
+
+    @include desktop-md {
+      width: 80%;
+      gap: 5rem;
+    }
+
+    @include desktop-lg {
+      width: 70%;
+      gap: 10rem;
+    }
+
+    @include desktop-xxl {
+      width: 60%;
+    }
+  }
+
+  @include desktop-md {
+    padding: 3rem;
   }
 }
