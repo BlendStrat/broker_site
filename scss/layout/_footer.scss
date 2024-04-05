@@ -89,5 +89,9 @@ footer {
         }
       }
     }
+
+    @include desktop-sm {
+      @include flexbox (row, nowrap, center, center, 5rem);
+    }
   }
 }

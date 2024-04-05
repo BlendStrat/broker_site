@@ -9,6 +9,15 @@
   background-color: $blue-primary-color;
   text-align: center;
   color: $white-primary-color;
+
+  @include desktop-sm {
+    &:hover {
+      background-color: $white-primary-color;
+      border: solid $blue-primary-color 1px;
+      color: $blue-primary-color;
+      transition: 1s;
+    }
+  }
 }
 
 .hero-info {
@@ -19,6 +28,17 @@
   background-color: transparent;
   margin-top: 0.75rem;
   margin-bottom: 1rem;
+
+  @include desktop-sm {
+    margin: 0;
+
+    &:hover {
+      background-color: $white-primary-color;
+      border: solid $blue-primary-color 1px;
+      color: $blue-primary-color;
+      transition: 1s;
+    }
+  }
 }
 
 // Submit button
@@ -31,4 +51,15 @@
   background-color: $blue-primary-color;
   color: $white-primary-color;
   font-size: 1.15rem;
+
+  @include desktop-sm {
+    width: 50%;
+
+    &:hover {
+      background-color: $white-primary-color;
+      border: solid $blue-primary-color 1px;
+      color: $blue-primary-color;
+      transition: 1s;
+    }
+  }
 }

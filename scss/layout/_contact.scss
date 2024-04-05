@@ -22,6 +22,14 @@
       text-align: left;
       color: $text-color;
     }
+
+    @include desktop-sm {
+      width: 70%;
+    }
+
+    @include desktop-md {
+      width: 60%;
+    }
   }
 
   form {
@@ -71,6 +79,22 @@
           }
         }
       }
+    }
+
+    @include desktop-sm {
+      width: 70%;
+    }
+
+    @include desktop-md {
+      width: 60%;
+    }
+
+    @include desktop-lg {
+      width: 50%;
+    }
+
+    @include desktop-xxl {
+      width: 40%;
     }
   }
 }
