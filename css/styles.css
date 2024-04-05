@@ -190,7 +190,7 @@ textarea::placeholder {
 }
 
 .card-blue, .card-white {
-  border: solid transparent 1px;
+  border: solid transparent 2px;
   border-radius: 0.5rem;
   width: 80%;
   padding: 1.5rem;
@@ -212,12 +212,32 @@ textarea::placeholder {
 .card-blue figure h5, .card-white figure h5 {
   color: #fafafa;
 }
+@media (min-width: 768px) {
+  .card-blue:hover, .card-white:hover {
+    border: solid #fafafa 2px;
+  }
+}
+@media (min-width: 1920px) {
+  .card-blue, .card-white {
+    height: 25vh;
+  }
+}
 
 .card-white {
   background-color: #fafafa;
 }
 .card-white figure h5 {
   color: #252b42;
+}
+@media (min-width: 768px) {
+  .card-white:hover {
+    border: solid #23a6f0 2px;
+  }
+}
+@media (min-width: 1920px) {
+  .card-white {
+    height: 25vh;
+  }
 }
 
 .client-card {
@@ -256,15 +276,26 @@ textarea::placeholder {
   text-align: left;
   color: #737373;
 }
+@media (min-width: 768px) {
+  .client-card p, .client-card label {
+    width: 100%;
+  }
+}
 @media (min-width: 1920px) {
   .client-card p, .client-card label {
     font-size: 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .client-card {
+    padding: 2rem;
   }
 }
 @media (min-width: 1920px) {
   .client-card {
     width: 100%;
     height: 45vh;
+    padding: 2.5rem;
   }
 }
 
@@ -876,7 +907,7 @@ footer {
   }
 }
 
-.portfolio, .portfolio__head {
+.portfolio {
   width: 100%;
   padding: 1.75rem;
   display: flex;
@@ -888,8 +919,16 @@ footer {
   background-color: #252b42;
 }
 .portfolio__head {
+  width: 100%;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #252b42;
   margin-top: 3rem;
-  padding: 1rem;
 }
 .portfolio__head h2 {
   width: 90%;
@@ -933,6 +972,7 @@ footer {
 }
 @media (min-width: 768px) {
   .portfolio__card-container {
+    padding: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -954,8 +994,13 @@ footer {
 }
 @media (min-width: 1920px) {
   .portfolio__card-container {
-    width: 60%;
-    gap: 8rem;
+    width: 80%;
+    height: 30vh;
+  }
+}
+@media (min-width: 1920px) {
+  .portfolio {
+    padding: 5rem;
   }
 }
 
