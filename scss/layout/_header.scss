@@ -3,14 +3,14 @@
 
   @include flexbox(column, nowrap, space-around, center, 0);
 
-  background-image: url(../../assets/hero-cover-mobile.png);
+  background-image: url("../../assets/hero-cover-mobile.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   @include desktop-sm {
     width: 100%;
-    background-image: url(../../assets/hero-cover-desk.png);
+    background-image: url("../../assets/hero-cover-desk.png");
   }
 }
 

@@ -552,7 +552,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   gap: 0;
-  background-image: url(../../assets/hero-cover-mobile.png);
+  background-image: url("../../assets/hero-cover-mobile.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -560,7 +560,7 @@ footer {
 @media (min-width: 768px) {
   .header-container {
     width: 100%;
-    background-image: url(../../assets/hero-cover-desk.png);
+    background-image: url("../../assets/hero-cover-desk.png");
   }
 }
 
