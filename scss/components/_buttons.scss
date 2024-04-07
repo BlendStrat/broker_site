@@ -8,14 +8,24 @@
   cursor: pointer;
   background-color: $blue-primary-color;
   text-align: center;
-  color: $white-primary-color;
+
+  button {
+    background-color: transparent;
+    border: none;
+    color: $white-primary-color;
+    text-decoration: none;
+  }
 
   @include desktop-sm {
     &:hover {
       background-color: $white-primary-color;
       border: solid $blue-primary-color 1px;
-      color: $blue-primary-color;
       transition: 1s;
+
+      & > button {
+        color: $blue-primary-color;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -24,7 +34,6 @@
   @extend .hero-cta;
 
   border: solid 1px $white-primary-color;
-  width: 35%;
   background-color: transparent;
   margin-top: 0.75rem;
   margin-bottom: 1rem;
