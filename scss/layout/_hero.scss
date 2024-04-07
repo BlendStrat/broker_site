@@ -17,13 +17,15 @@
       text-align: center;
 
       @include desktop-sm {
-        width: 90%;
+        width: 95%;
         text-align: left;
+        font-size: 3rem;
       }
 
       @include desktop-md {
-        width: 100%;
+        width: 90%;
         text-align: left;
+        font-size: 3.5rem;
       }
 
       @include desktop-xxl {
@@ -53,7 +55,7 @@
     }
 
     @include desktop-sm {
-      width: 50%;
+      width: 70%;
       margin-top: 0;
       margin-bottom: 2rem;
       padding: 1.5rem;
@@ -78,6 +80,10 @@
 
       @include flexbox (row, nowrap, start, center, 1rem);
     }
+
+    @include desktop-xxl {
+      margin-top: 3rem;
+    }
   }
 
   &__background {
@@ -91,7 +97,13 @@
       image-rendering: optimizeSpeed;
 
       @include desktop-sm {
-        height: 90vh;
+        object-fit: fill;
+        margin-bottom: 0;
+      }
+
+      @include desktop-md {
+        object-fit: fill;
+        width: 100%;
         margin-bottom: 0;
       }
     }
@@ -100,8 +112,19 @@
       width: 50%;
       height: auto;
       margin-bottom: 0;
+      padding: 0;
 
       @include flexbox (column, nowrap, center, end, 0);
+    }
+
+    @include desktop-md {
+      width: 40%;
+      object-fit: fill;
+    }
+
+    @include desktop-xxl {
+      width: 40%;
+      object-fit: fill;
     }
   }
 

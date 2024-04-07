@@ -81,10 +81,10 @@ button {
 }
 
 p, label {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.014rem;
-  line-height: 1.429rem;
+  line-height: 1.75rem;
 }
 
 li, li > a {
@@ -137,20 +137,27 @@ textarea::placeholder {
   cursor: pointer;
   background-color: #23a6f0;
   text-align: center;
+}
+.hero-cta button, .hero-info button {
+  background-color: transparent;
+  border: none;
   color: #fafafa;
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   .hero-cta:hover, .hero-info:hover {
     background-color: #fafafa;
     border: solid #23a6f0 1px;
-    color: #23a6f0;
     transition: 1s;
+  }
+  .hero-cta:hover > button, .hero-info:hover > button {
+    color: #23a6f0;
+    cursor: pointer;
   }
 }
 
 .hero-info {
   border: solid 1px #fafafa;
-  width: 35%;
   background-color: transparent;
   margin-top: 0.75rem;
   margin-bottom: 1rem;
@@ -193,8 +200,15 @@ textarea::placeholder {
   border: solid transparent 2px;
   border-radius: 0.5rem;
   width: 80%;
+  height: 20vh;
   padding: 1.5rem;
   background-color: #23a6f0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
 }
 .card-blue figure, .card-white figure {
   width: 100%;
@@ -207,14 +221,28 @@ textarea::placeholder {
 }
 .card-blue figure img, .card-white figure img {
   width: 25%;
+  height: 8vh;
   color: #fafafa;
 }
 .card-blue figure h5, .card-white figure h5 {
   color: #fafafa;
 }
 @media (min-width: 768px) {
+  .card-blue, .card-white {
+    height: 20vh;
+  }
   .card-blue:hover, .card-white:hover {
     border: solid #fafafa 2px;
+  }
+}
+@media (min-width: 1024px) {
+  .card-blue, .card-white {
+    height: 20vh;
+  }
+}
+@media (min-width: 1200px) {
+  .card-blue, .card-white {
+    height: 20vh;
   }
 }
 @media (min-width: 1920px) {
@@ -241,8 +269,8 @@ textarea::placeholder {
 }
 
 .client-card {
-  width: 80%;
-  padding: 1rem;
+  width: 90%;
+  padding: 2rem;
   background-color: #fafafa;
   display: flex;
   flex-direction: column;
@@ -251,17 +279,20 @@ textarea::placeholder {
   align-items: start;
   gap: 1rem;
 }
-.client-card h3 {
+.client-card__head {
+  width: 90%;
+}
+.client-card__head h3 {
   width: 100%;
   text-align: left;
   color: #252b42;
 }
-.client-card h6, .client-card input::placeholder, .client-card textarea::placeholder {
+.client-card__head h6, .client-card__head input::placeholder, .client-card__head textarea::placeholder {
   width: 100%;
   text-align: left;
   color: #737373;
 }
-.client-card__rate {
+.client-card__head--rate {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -270,32 +301,70 @@ textarea::placeholder {
   align-items: center;
   gap: 0.3rem;
 }
+@media (min-width: 768px) {
+  .client-card__head {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 1400px) {
+  .client-card__head {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
 .client-card p, .client-card label {
-  width: 100%;
-  padding: 0 8rem 0 0;
+  width: 90%;
   text-align: left;
   color: #737373;
 }
 @media (min-width: 768px) {
   .client-card p, .client-card label {
-    width: 100%;
+    width: 75%;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .client-card p, .client-card label {
+    width: 85%;
+  }
+}
+@media (min-width: 1400px) {
+  .client-card p, .client-card label {
+    width: 80%;
+    margin-bottom: 1rem;
   }
 }
 @media (min-width: 1920px) {
   .client-card p, .client-card label {
     font-size: 1.25rem;
+    width: 85%;
+    margin-bottom: 2rem;
   }
 }
 @media (min-width: 768px) {
   .client-card {
-    padding: 2rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: start;
+    gap: 0;
+  }
+}
+@media (min-width: 1400px) {
+  .client-card {
+    width: 100%;
+    padding: 0;
   }
 }
 @media (min-width: 1920px) {
   .client-card {
     width: 100%;
-    height: 45vh;
-    padding: 2.5rem;
   }
 }
 
@@ -505,7 +574,7 @@ footer {
   gap: 0;
 }
 .contact form fieldset ul li label {
-  width: 25%;
+  width: 90%;
   color: #252b42;
 }
 .contact form fieldset ul li input {
@@ -614,14 +683,16 @@ footer {
 }
 @media (min-width: 768px) {
   .hero__head h1 {
-    width: 90%;
+    width: 95%;
     text-align: left;
+    font-size: 3rem;
   }
 }
 @media (min-width: 1024px) {
   .hero__head h1 {
-    width: 100%;
+    width: 90%;
     text-align: left;
+    font-size: 3.5rem;
   }
 }
 @media (min-width: 1920px) {
@@ -654,7 +725,7 @@ footer {
 }
 @media (min-width: 768px) {
   .hero__head {
-    width: 50%;
+    width: 70%;
     margin-top: 0;
     margin-bottom: 2rem;
     padding: 1.5rem;
@@ -693,6 +764,11 @@ footer {
     gap: 1rem;
   }
 }
+@media (min-width: 1920px) {
+  .hero__btn {
+    margin-top: 3rem;
+  }
+}
 .hero__background {
   width: 90%;
   display: flex;
@@ -709,7 +785,14 @@ footer {
 }
 @media (min-width: 768px) {
   .hero__background img {
-    height: 90vh;
+    object-fit: fill;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .hero__background img {
+    object-fit: fill;
+    width: 100%;
     margin-bottom: 0;
   }
 }
@@ -718,12 +801,25 @@ footer {
     width: 50%;
     height: auto;
     margin-bottom: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: end;
     gap: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .hero__background {
+    width: 40%;
+    object-fit: fill;
+  }
+}
+@media (min-width: 1920px) {
+  .hero__background {
+    width: 40%;
+    object-fit: fill;
   }
 }
 @media (min-width: 480px) {
@@ -942,23 +1038,24 @@ footer {
 }
 @media (min-width: 1920px) {
   .portfolio__head h2 {
-    width: 30%;
+    width: 50%;
+    font-size: 3.5rem;
   }
 }
 .portfolio__head p, .portfolio__head label {
-  width: 50%;
+  width: 75%;
   text-align: center;
   color: #fafafa;
 }
 @media (min-width: 1024px) {
   .portfolio__head p, .portfolio__head label {
-    width: 45%;
+    width: 50%;
   }
 }
 @media (min-width: 1920px) {
   .portfolio__head p, .portfolio__head label {
-    width: 30%;
-    font-size: 1.25rem;
+    width: 50%;
+    font-size: 1.5rem;
   }
 }
 .portfolio__card-container {
@@ -1039,9 +1136,16 @@ footer {
     width: 50%;
   }
 }
+@media (min-width: 1400px) {
+  .clients__head p, .clients__head label {
+    width: 60%;
+    font-size: 1.8rem;
+    line-height: 2.25rem;
+  }
+}
 @media (min-width: 1920px) {
   .clients__head p, .clients__head label {
-    font-size: 1.25rem;
+    font-size: 1.85rem;
   }
 }
 .clients__card-container {
